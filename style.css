@@ -28,6 +28,13 @@ body{
 
 }
 
+
+.titulo-principal {
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
 .botao {
     background-color: var(--botao-inativo);
     color: var(--branco);
@@ -41,3 +48,14 @@ body{
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
+
+ .botaes{
+    display: block;
+ }
+
+ @media screen and (min-widt: 768px){
+ .botoes{
+    display: flex;
+ }
+    
+ }
