@@ -5,8 +5,8 @@
     --verde: #6fff57;
     --branco:#ffffff;
     --botao-ativo: #3a375e;
-    --botao-inativo:rgba(58, 55, 94, 0.5)
-    --texto-fundo:rgba(58, 55, 94, 0.3)
+    --botao-inativo:rgba(58, 55, 94, 0.5);
+    --texto-fundo:rgba(58, 55, 94, 0.3);
 }
 
 body{
@@ -24,6 +24,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 32px;
+    
 
 }
 
