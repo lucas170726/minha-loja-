@@ -27,10 +27,11 @@ body{
 
 }
 
-.botoes{
+.botao {
     background-color: var(--botao-inativo);
     color: var(--branco);
     font-size: 24px;
     padding: 0.5em 1em;
     margin-top: 16px;
+    width: 100%;
 }
