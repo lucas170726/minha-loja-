@@ -48,14 +48,20 @@ body{
     border-top: none;
 }
 
+.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+ }
+
+ .abas-texto{
+    background-color: var(--texto-fundo);
+ }
+
  .botoes{
     display: block;
  }
 
- .ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
- }
+ 
 
  .botao:first-child{
     border-radius: 40px 40px 0 0;
