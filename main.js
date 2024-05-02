@@ -17,10 +17,13 @@ const contadores = document.querySelectorAll('.contador')
 const tempoObjetivo1 = new Date('2024-10-05T00:00:00');
 
 const tempoObjetivo1 =objetivo 1 17 ('2024-10-05T00:00:00' );
-
 const tempoObjetivo1 = objetivo 2 20('2024-10-05T00:00:00');
-
 const tempoObjetivo1 = objetivo 3 10('2024-10-05T00:00:00');
+
+cont textos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4 ] ;
+
+for (let i = 0; i < contadores . length; i++)
+    contadores [i] . textContent = calculatempo (tempos [i] );
 
 contadores[0].textContent = calculatempo(tempoObjetivo1); 
 
