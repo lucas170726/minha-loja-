@@ -21,11 +21,19 @@ const tempoObjetivo3 = new Date('2024-10-05T00:00:00');
 const tempoObjetivo4 = new Date('2024-10-05T00:00:00');
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
-
+function atualizacronometro () {
 for (let i = 0; i < contadores.length; i++)
     contadores[i].textContent = calculatempo(tempos[i]);
 
 contadores[0].textContent = calculatempo(tempoObjetivo1);
+
+}
+}
+
+function comecacronometro ()}
+atualizacronometro();
+setinterval (atuliazarcronometro, 1000);
+}
 
 function calculatempo(tempoObjetivo1) {
     let tempoAtual = new Date();
