@@ -30,7 +30,7 @@ contadores[0].textContent = calculatempo(tempoObjetivo1);
 }
 }
 
-function comecacronometro ()}
+function comecacronometro () {
 atualizacronometro();
 setinterval (atuliazarcronometro, 1000);
 }
