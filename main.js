@@ -9,33 +9,32 @@ for (let i = 0; i < botoes.length; i++) {
             textos[j].classList.remove('ativo');
         }
         botoes[i].classList.add('ativo');
-        textos[i].classList.add('ativo');12:30
+        textos[i].classList.add('ativo');
     }
 }
 
-const contadores = document.querySelectorAll('.contador')
-const tempoObjetivo1 = new Date('2024-10-05T00:00:00');
-
-const tempoObjetivo2 = new Date('2024-10-05T00:00:00');
+const contadores = document.querySelectorAll('.contador');
+const tempoObjetivo1 = new Date('2023-05-05T00:00:00');
+const tempoObjetivo2 = new Date('2024-06-25T00:00:00');
 const tempoObjetivo3 = new Date('2024-10-05T00:00:00');
-const tempoObjetivo4 = new Date('212:30024-10-05T00:00:00');
+const tempoObjetivo4 = new Date('2024-12-10T00:00:00');
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
-function atualizacronometro () {
-for (let i = 0; i < contadores.length; i++)
-    contadores[i].textContent = calculatempo(tempos[i]);
 
-contadores[0].textContent = calculatempo(tempoObjetivo1);
-
-}
+function atualizaCronometro() {
+    for (let i = 0; i < contadores.length; i++) {
+        contadores[i].textContent = calculaTempo(tempos[i]);
+    }
 }
 
-function comecacronometro () {
-atualizacronometro();
-setinterval (atuliazarcronometro, 1000);
+function comecaCronometro() {
+    atualizaCronometro();
+    setInterval(atualizaCronometro, 1000);
 }
 
-function calculatempo(tempoObjetivo1) {
+//comecaCronometro();
+
+function calculaTempo(tempoObjetivo1) {
     let tempoAtual = new Date();
     let tempoFinal = tempoObjetivo1 - tempoAtual;
     let segundos = Math.floor(tempoFinal / 1000);
@@ -46,5 +45,13 @@ function calculatempo(tempoObjetivo1) {
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-    return dias + 'dias ' + horas + 'horas ' + minutos + 'minutos ' + segundos + 'segundos ';
+
+    if (tempoFinal > 0) {
+        return dias + 'dias ' + horas + 'horas ' + minutos + 'minutos ' + segundos + 'segundos ';
+    }
+    else {
+        return 'Tempo Esgotado';
+    }
 }
+
+
