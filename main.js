@@ -47,11 +47,9 @@ function calculaTempo(tempoObjetivo1) {
     horas %= 24;
 
     if (tempoFinal > 0) {
-        return dias + 'dias ' + horas + 'horas ' + minutos + 'minutos ' + segundos + 'segundos ';
+        return [dias, hora, minutos, segundos,];
     }
     else {
-        return 'Tempo Esgotado';
+            return [0, 0, 0, 0,];
     }
 }
-
-
